@@ -1,6 +1,6 @@
 library(dplyr)
-
-FIL.txt <- paste(getwd(), "data", "household_power_consumption.txt", sep = "/")
+DIR.dat <- paste(getwd(), "data", sep = "/")
+FIL.txt <- paste(DIR.dat, "household_power_consumption.txt", sep = "/")
 FIL.tmp <- tempfile()
 download.file(url = "https://d396qusza40orc.cloudfront.net/exdata%2Fdata%2Fhousehold_power_consumption.zip",
               destfile = FIL.tmp, method = "curl")
